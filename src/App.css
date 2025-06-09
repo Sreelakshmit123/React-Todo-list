@@ -1,0 +1,43 @@
+.todo{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(159, 209, 254);
+  padding-top:1px;
+}
+.container{
+  width: 80vh;
+  margin-left: 450px;
+  background-color: rgb(247, 244, 244);
+  margin-top: 120px;
+}
+.inputtext{
+  height: 37px;
+  width: 69vh;
+  border-radius: 5px;
+}
+.btn{
+  color: rgb(255, 255, 255);
+  background-color: rgb(200, 130, 238);
+  border: 0px;
+  height: 40px;
+}
+
+.deleteButton{
+
+  float: right;
+  background-color: red;
+}
+.showtask{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(228, 229, 231);
+  border-radius: 8px;
+}
+.deleteButton:hover{
+  float: right;
+  background-color: rgb(249, 111, 111);
+}
+.clearalltask{
+  display: flex;
+  justify-content: space-between;
+}
