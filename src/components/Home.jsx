@@ -24,17 +24,19 @@ function Home() {
     return (
         <>
             <div className='todo'>
-                <div className="container pb-5 ">
-                    <h1 >Todo List</h1>
-                    <input type="text" value={newTask} onChange={handleChange} className='inputtext  mb-4' placeholder='Add Your New List' />
-                    <Button onClick={addTask} className='btn  ms-2 mt-0  '><i class="fa-solid fa-plus"></i></Button>
+                <div className="container pb-5 p-3  ">
+                    <h1 className='Heading mb-4 mt-2'><b>Todo App</b></h1>
+                    <div className='textareaButton'>
+                        <input type="text" value={newTask} onChange={handleChange} className='inputtext  mb-4' placeholder='Add Your New Todo' />
+                        <Button onClick={addTask} className='Addbtn'><i class="fa-solid fa-plus"></i></Button>
+                    </div>
                     <p>
                         {tasks.map((task, index) =>
-                            <p className='showtask p-2' key={index}>
-                                <span className='text ms-2'>{task}</span>
-                                <Button className='deleteButton ms-5  ' onClick={() => deleteTask(index)}><i class="fa-solid fa-trash"></i> </Button>
+                            <p className='showtask' key={index}>
+                                <span className='text m-2'>{task}</span>
+                                <Button className='deleteButton' onClick={() => deleteTask(index)}><i class="fa-solid fa-trash"></i> </Button>
                             </p>
-
+    
                         )}
                         {tasks.length > 0 && (
                             <div className='clearalltask p-2'>
